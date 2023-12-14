@@ -33,85 +33,98 @@
 
   <main class="main">
     <div class="events">
-      <section class="events__container">
-        <h2 class="events__title title">Мероприятия</h2>
-        <div class="events__list listing">
-          <article class="card-event listing__card-event card-event">
-            <a href="#" class="card-event__link">
-              <picture class="card-event__picture">
-                <img src="assets/images/nirvana.png" class="card-event__picture-img" alt="nirvana">
+      <section class="listing events__listing">
+        <h2 class="listing__title section-title">Мероприятия</h2>
+        <div class="listing__events-list">
+          <!-- prettier-ignore -->
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+
+                <!-- <source type="image/webp" srcset="assets/images/events/nirvana.png__webp" /> -->
+                <img src="assets/images/events/nirvana.png" class="event-card__img" alt="nirvana">
               </picture>
 
-              <h3 class="card-event__title">Собираемся и слушаем альбом Nirvana. Nirvana</h3>
+              <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana. Nirvana</h4>
 
-              <p class="card-event__text">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+              <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
 
-              <time datetime="2022-12-07T18:00" class="card-event__time">07.12.2022 | начало 18.00</time>
+              <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
             </a>
           </article>
-          <article class="card-event listing__card-event card-event">
-            <a href="#" class="card-event__link">
-              <picture class="card-event__picture">
-                <img src="assets/images/how_stuff_works.png" class="card-event__picture-img" alt="stuff">
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+
+                <!-- <source type="image/webp" srcset="assets/images/events/howstuffworks.png__webp" /> -->
+                <img src="assets/images/events/howstuffworks.png" class="event-card__img" alt="stuff">
               </picture>
 
-              <h3 class="card-event__title">Есть тема, нужно обсудить с HowStuffWorks</h3>
+              <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
 
-              <p class="card-event__text">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+              <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
 
-              <time datetime="2022-12-14T18:30" class="card-event__time">14.12.2022 | начало 18.30</time>
+              <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
             </a>
           </article>
-          <article class="card-event listing__card-event card-event">
-            <a href="#" class="card-event__link">
-              <picture class="card-event__picture">
-                <img src="assets/images/sade.png" class="card-event__picture-img" alt="sade">
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+
+                <!-- <source type="image/webp" srcset="assets/images/events/sade.png__webp" /> -->
+                <img src="assets/images/events/sade.png" class="event-card__img" alt="sade">
               </picture>
 
-              <h3 class="card-event__title">Вечер | The Best of Sade</h3>
+              <h4 class="event-card__title">Вечер | The Best of Sade</h4>
 
-              <p class="card-event__text">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+              <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
 
-              <time datetime="2022-12-16T20:00" class="card-event__time">16.12.2022 | начало 20.00</time>
+              <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
             </a>
           </article>
-          <article class="card-event listing__card-event card-event">
-            <a href="#" class="card-event__link">
-              <picture class="card-event__picture">
-                <img src="assets/images/malevich.png" class="card-event__picture-img" alt="malevich">
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+
+                <!-- <source type="image/webp" srcset="assets/images/events/malevich.png__webp" /> -->
+                <img src="assets/images/events/malevich.png" class="event-card__img" alt="malevich">
               </picture>
 
-              <h3 class="card-event__title">Выставка Малевича в Томске</h3>
+              <h4 class="event-card__title">Выставка Малевича в Томске</h4>
 
-              <p class="card-event__text">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+              <p class="event-card__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
 
-              <time datetime="2022-12-23T20:00" class="card-event__time">23.12.2022 | начало 20.00</time>
+              <time datetime="2022-12-23T20:00" class="event-card__time">23.12.2022 | начало 20.00</time>
             </a>
           </article>
-          <article class="card-event listing__card-event card-event">
-            <a href="#" class="card-event__link">
-              <picture class="card-event__picture">
-                <img src="assets/images/tatler.png" class="card-event__picture-img" alt="tatler">
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+
+                <!-- <source type="image/webp" srcset="assets/images/events/tatler.png__webp" /> -->
+                <img src="assets/images/events/tatler.png" class="event-card__img" alt="tatler">
               </picture>
 
-              <h3 class="card-event__title">Мастер — класс по студийной съемке от Tatler</h3>
+              <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
 
-              <p class="card-event__text">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
+              <p class="event-card__description">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
 
-              <time datetime="2022-12-25T13:00" class="card-event__time">25.12.2022 | начало 13.00</time>
+              <time datetime="2022-12-25T13:00" class="event-card__time">25.12.2022 | начало 13.00</time>
             </a>
           </article>
-          <article class="card-event listing__card-event card-event">
-            <a href="#" class="card-event__link">
-              <picture class="card-event__picture">
-                <img src="assets/images/the_hatters.png" class="card-event__picture-img" alt="the_hatters">
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+
+                <!-- <source type="image/webp" srcset="assets/images/events/thehatters.png__webp" /> -->
+                <img src="assets/images/events/thehatters.png" class="event-card__img" alt="the_hatters">
               </picture>
 
-              <h3 class="card-event__title">Повесилимся на славу на концерте The Hatters</h3>
+              <h4 class="event-card__title">Повеселимся на славу на концерте The Hatters</h4>
 
-              <p class="card-event__text">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко.</p>
+              <p class="event-card__description">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко.</p>
 
-              <time datetime="2022-12-27T10:00" class="card-event__time">27.12.2022 | начало 10.00</time>
+              <time datetime="2022-12-27T10:00" class="event-card__time">27.12.2022 | начало 10.00</time>
             </a>
           </article>
         </div>
@@ -120,7 +133,44 @@
     </div>
   </main>
 
-  <footer class="page-footer"></footer>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__border"></div>
+      <div class="page-footer__wrapper">
+        <nav class="page-footer__nav">
+          <a href="" class="page-footer__nav-link">
+            Календарь мероприятий
+          </a>
+          <a href="" class="page-footer__nav-link">
+            Провести мероприятие
+          </a>
+          <a href="" class="page-footer__nav-link">
+            Стать арендатором
+          </a>
+          <a href="" class="page-footer__nav-link">
+            Наши проекты
+          </a>
+          <a href="" class="page-footer__nav-link">
+            Контакты
+          </a>
+        </nav>
+        <form class="page-footer__form subscribe">
+          <h4 class="subscribe__title">
+            Подпишись и будь в курсе происходящего
+          </h4>
+          <div class="subscribe__wrapper">
+            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <button type="submit" class="subscribe__submit">Подписаться</button>
+          </div>
+          <label class="subscribe__check check">
+            <input type="checkbox" class="check__input" name="agree" required>
+            <span class="check__mark"></span>
+            <span class="check__label">Согласен на обработку персональных данных</span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
