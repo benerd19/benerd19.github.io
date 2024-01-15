@@ -464,7 +464,8 @@ button {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  text-decoration: underline;
+  -webkit-text-decoration: underline 0.5px;
+          text-decoration: underline 0.5px;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
   margin-left: 133px;
@@ -580,9 +581,34 @@ button {
 }
 .home {
   padding-top: 147px;
+  padding-top: 0px;
 }
 .home__listing {
   margin-bottom: 95px;
+}
+.home__doit {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  font-family: "mak", serif;
+  font-weight: 700;
+  font-size: 128px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: 50%;
+  width: 100vw;
+  white-space: nowrap;
+  text-align: center;
+}
+.home__doit-text1 {
+  margin-left: -37.5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.home__doit-text2 {
+  margin-left: 450px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .event-card {
   -webkit-box-sizing: border-box;
@@ -1298,7 +1324,8 @@ button {
   height: 100%;
   background-color: #bc3324;
 }
-.page-footer__nav-link {
+.page-footer__nav-link,
+.page-footer__links-link {
   display: block;
   text-decoration: none;
   font-size: 16px;
@@ -1307,8 +1334,112 @@ button {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-.page-footer__nav-link:active {
+.page-footer__nav-link:active,
+.page-footer__links-link:active {
   color: #bc3324;
+}
+.page-footer__info {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 60px;
+}
+.page-footer__info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.33%;
+          flex: 1 1 33.33%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+.page-footer__info-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 44px;
+     -moz-column-gap: 44px;
+          column-gap: 44px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.33%;
+          flex: 1 1 33.33%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page-footer__social-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #1f1e1e;
+  color: #ffffff;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.page-footer__info-signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.33%;
+          flex: 1 1 33.33%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.page-footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 60px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.page-footer__copyright {
+  font-weight: 400;
+  font-size: 16px;
+}
+.page-footer__info-social {
+  height: 58px;
+  width: 58px;
 }
 .display-none {
   display: none;
@@ -1352,7 +1483,11 @@ button {
   .pp__sticky-btn:hover {
     background-color: #a51505;
   }
-  .page-footer__nav-link:hover {
+  .page-footer__nav-link:hover,
+  .page-footer__links-link:hover {
     color: #bc3324;
+  }
+  .page-footer__social-btn:hover {
+    background-color: #bc3324;
   }
 }
