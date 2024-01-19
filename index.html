@@ -21,7 +21,7 @@
       <a href="index.html" class="page-header__logo">
         <!-- <img src="assets/images/logo.svg" class="page-header__logo-img"/> -->
         <svg class="page-header__logo-img" width="202" height="147">
-          <use xlink:href="assets/icons/symbols.svg#logo">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
 
@@ -42,7 +42,7 @@
         <h1 class="main-header__title">Арт — пространство</h1>
 
         <picture class="main-header__picture">
-          <img src="assets/images/lenni.png" class="main-header__img" />
+          <img src="assets/images/lenni.png" class="main-header__img" alt="lenni" />
         </picture>
 
         <p class="main-header__text">
@@ -51,7 +51,15 @@
         </p>
       </header>
 
-      <section class="offers home__offers"></section>
+      <div class="i-want i-want--mb200">
+        <div class="i-want__wrapper">
+          <h3 class="i-want__title">Я хочу:</h3>
+          <div class="i-want__btns-section">
+            <button class="btn btn--red">Провести мероприятие</button>
+            <button class="btn">Стать арендатором</button>
+          </div>
+        </div>
+      </div>
       <section class="about home__about">
         <div class="about__container">
           <h2 class="about__section-title section-title">
@@ -66,10 +74,10 @@
           </div>
           <div class="about__block2">
             <picture class="about__picture">
-              <img class="about__img" src="assets/images/about/about1.jpg" />
+              <img class="about__img" src="assets/images/about/about1.jpg" alt="concert" />
             </picture>
             <picture class="about__picture2">
-              <img class="about__img" src="assets/images/about/about2.jpg" />
+              <img class="about__img" src="assets/images/about/about2.jpg" alt="gallery" />
             </picture>
             <h3 class="about__title about__title--w868 about__title--2">
               Мы предоставляем площади для вашего мероприятия
@@ -82,7 +90,7 @@
           </div>
           <div class="about__block3">
             <picture class="about__picture3">
-              <img class="about__img2" src="assets/images/about/about3.jpg" />
+              <img class="about__img2" src="assets/images/about/about3.jpg" alt="cafe" />
             </picture>
             <div class="about__block3-wrapper">
               <p class="about__text about__text--mb90">
@@ -93,14 +101,83 @@
                   Смотреть
                 </span>
                 <svg class="link__icon" width="91" height="60">
-                  <use xlink:href="assets/icons/symbols.svg#link">
+                  <use xlink:href="assets/icons/symbols.svg#link"></use>
                 </svg>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="upcoming home__upcoming"></section>
+      <section class="upcoming upcoming">
+        <div class="upcoming__wrapper">
+          <div class="upcoming__content">
+            <h2 class="upcoming__title section-title">Мероприятия</h2>
+            <div class="upcoming__events-list">
+              <article class="event-card upcoming__event-card">
+                <a href="event.html" class="event-card__link">
+                  <picture class="event-card__picture">
+
+                    <!-- <source type="image/webp" srcset="assets/images/events/nirvana.png__webp" /> -->
+                    <img src="assets/images/events/nirvana.png" class="event-card__img" alt="nirvana">
+                  </picture>
+
+                  <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana. Nirvana</h4>
+
+                  <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+
+                  <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
+                </a>
+              </article>
+              <article class="event-card upcoming__event-card">
+                <a href="event.html" class="event-card__link">
+                  <picture class="event-card__picture">
+
+                    <!-- <source type="image/webp" srcset="assets/images/events/howstuffworks.png__webp" /> -->
+                    <img src="assets/images/events/howstuffworks.png" class="event-card__img" alt="stuff">
+                  </picture>
+
+                  <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+
+                  <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+
+                  <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
+                </a>
+              </article>
+              <article class="event-card upcoming__event-card">
+                <a href="event.html" class="event-card__link">
+                  <picture class="event-card__picture">
+
+                    <!-- <source type="image/webp" srcset="assets/images/events/sade.png__webp" /> -->
+                    <img src="assets/images/events/sade.png" class="event-card__img" alt="sade">
+                  </picture>
+
+                  <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+
+                  <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+
+                  <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
+                </a>
+              </article>
+            </div>
+            <div class="upcoming__slider">
+              <button class="upcoming__arrow arrow-btn">
+                <svg class="arrow-btn__icon arrow-btn__icon--left" width="91" height="60">
+                  <use xlink:href="assets/icons/symbols.svg#link"></use>
+                </svg>
+              </button>
+              <svg class="upcoming__progress" width="99" height="2">
+                <use xlink:href="assets/icons/symbols.svg#slider"></use>
+              </svg>
+              <button class="upcoming__arrow arrow-btn">
+                <svg class="arrow-btn__icon arrow-btn__icon--right" width="91" height="60">
+                  <use xlink:href="assets/icons/symbols.svg#link"></use>
+                </svg>
+              </button>
+            </div>
+            <a href="#" class="upcoming__link link">Смотреть все</a>
+          </div>
+        </div>
+      </section>
       <section class="listing home__listing">
         <h2 class="listing__title section-title">Блог</h2>
 
@@ -180,7 +257,7 @@
               <div class="contacts-item">
                 <div class="contacts-item__img">
                   <svg class="contacts-item__icon" width="24" height="24">
-                    <use xlink:href="assets/icons/symbols.svg#location">
+                    <use xlink:href="assets/icons/symbols.svg#location"></use>
                   </svg>
                 </div>
                 <div class="contacts-item__content">
@@ -193,12 +270,12 @@
               <div class="contacts-item">
                 <div class="contacts-item__img">
                   <svg class="contacts-item__icon" width="24" height="24">
-                    <use xlink:href="assets/icons/symbols.svg#home">
+                    <use xlink:href="assets/icons/symbols.svg#home"></use>
                   </svg>
                 </div>
                 <div class="contacts-item__content">
                   <h4 class="contacts-item__title">Отдел аренды</h4>
-                  <a href="tel: 74993500740" class="contacts-item__info">+7 499 350 0730</a>
+                  <a href="tel:74993500740" class="contacts-item__info">+7 499 350 0730</a>
                   <a href="mailto:hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
                 </div>
               </div>
@@ -206,12 +283,12 @@
               <div class="contacts-item">
                 <div class="contacts-item__img">
                   <svg class="contacts-item__icon" width="24" height="24">
-                    <use xlink:href="assets/icons/symbols.svg#star">
+                    <use xlink:href="assets/icons/symbols.svg#star"></use>
                   </svg>
                 </div>
                 <div class="contacts-item__content">
                   <h4 class="contacts-item__title">Отдел мероприятий</h4>
-                  <a href="tel: 74993500740" class="contacts-item__info">+7 499 350 0730</a>
+                  <a href="tel:74993500740" class="contacts-item__info">+7 499 350 0730</a>
                   <a href="mailto:hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
                 </div>
               </div>
@@ -224,8 +301,8 @@
         </div>
       </section>
 
-      <div class="doit home__doit">
-        <p class="home__doit-text1">Просто делайте, что нравится,</p>
+      <div class="home__doit">
+        <p class="home__doit-text1">Просто делайте, что нравится, </p>
         <p class="home__doit-text2">а мы вам поможем</p>
       </div>
     </div>
