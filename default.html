@@ -6,6 +6,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
   <title>Lenni Art</title>
+
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
+
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="assets/icons/site.webmanifest">
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#424e51">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- CSS -->
   <link rel="stylesheet" href="styles/styles.css?ver=0">
 
@@ -30,9 +49,30 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
 
-      <a href="#" class="btn page-header__sign-in-btn">Войти</a>
+      <div class="page-header__right-block">
+        <a href="#" class="page-header__sign-in-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -76,34 +116,38 @@
           <a href="" class="page-footer__nav-link">
             Календарь мероприятий
           </a>
-          <a href="" class="page-footer__nav-link">
+          <a href="#" class="page-footer__nav-link">
             Провести мероприятие
           </a>
-          <a href="" class="page-footer__nav-link">
+          <a href="#" class="page-footer__nav-link">
             Стать арендатором
           </a>
-          <a href="" class="page-footer__nav-link">
+          <a href="#" class="page-footer__nav-link">
             Наши проекты
           </a>
-          <a href="" class="page-footer__nav-link">
+          <a href="#" class="page-footer__nav-link">
             Контакты
           </a>
         </nav>
-        <form class="page-footer__form subscribe">
+
+        <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__form subscribe" id="js-subscribeForm">
           <h4 class="subscribe__title">
             Подпишись и будь в курсе происходящего
           </h4>
           <div class="subscribe__wrapper">
-            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <div class="subscribe__wrapper-input">
+              <input type="email" name="email" placeholder="Email" class="subscribe__input" id="js-subscribeEmail" required />
+            </div>
             <button type="submit" class="subscribe__submit">Подписаться</button>
           </div>
           <label class="subscribe__check check">
             <input type="checkbox" class="check__input" name="agree" required>
             <span class="check__mark"></span>
-            <span class="check__label">Согласен на обработку персональных данных</span>
+            <span class="check__label--footer">Согласен на обработку персональных данных</span>
           </label>
         </form>
       </div>
+
       <div class="page-footer__info">
         <div class="page-footer__info-text">
           <span class="page-footer__copyright">© Millennials 2024</span>
@@ -113,24 +157,34 @@
           </div>
         </div>
         <div class="page-footer__info-socials">
-          <button type="button" class="page-footer__social-btn">
+          <a href="#" rel="nofollow noreferrer noopener" target="_blank" class="page-footer__social-link">
             <svg class="page-footer__btn-icon" width="24" height="24">
               <use xlink:href="assets/icons/symbols.svg#inst"></use>
             </svg>
-          </button>
-          <button type="button" class="page-footer__social-btn">
+          </a>
+          <a href="#" rel="nofollow noreferrer noopener" target="_blank" class="page-footer__social-link">
             <svg class="page-footer__btn-icon" width="24" height="24">
               <use xlink:href="assets/icons/symbols.svg#vk"></use>
             </svg>
-          </button>
+          </a>
         </div>
         <div class="page-footer__info-signature">
           <span>Создание и продвижение</span>
-          <img src="assets/icons/tagree.png" alt="tagree" />
+          <a href="#" rel="nofollow noreferrer noopener" target="_blank" class="page-footer__signature-link">
+            <svg class="page-footer__signature-icon" width="57" height="17">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/jquery.validate.min.js"></script>
+  <script src="scripts/jquery.validate-init.js"></script>
+  <script src="scripts/toastr.js"></script>
+  <script src="scripts/main.min.js"></script>
 </body>
 
 </html>
